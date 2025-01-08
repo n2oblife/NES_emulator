@@ -1,4 +1,4 @@
-#include bus.hpp
+#include "bus.hpp"
 
 Bus::Bus() {
     // TODO change when implementing other devices
@@ -20,3 +20,4 @@ void Bus::read(word address, bool bReadOnly) {
     
     return 0x00; 
 }
+

@@ -28,11 +28,11 @@ CPU::~CPU() {
     // TODO
 }
 
-CPU::read(word address) {
+CPU::read(h_word address) {
     return bus->read(address,false);
 }
 
-CPU::write(word address, byte data) {
+CPU::write(h_word address, byte data) {
     bus->write(address, data);
 }
 

@@ -9,12 +9,12 @@ Bus::Bus() {
     cpu.connectBus(this);
 }
 
-void Bus::write(word address, byte data) {
+void Bus::write(h_word address, byte data) {
     if (address >= 0x0000 && address <= BUS_RANGE)
         ram[address] = data;
 }
 
-void Bus::read(word address, bool bReadOnly) {
+void Bus::read(h_word address, bool bReadOnly) {
     if (address >= 0x0000 && address <= BUS_RANGE)
         return ram[address];
     

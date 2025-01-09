@@ -12,8 +12,8 @@ class Bus {
     public: // Bus interface
         Bus();
         ~Bus();
-        void write(word address, byte data);
-        byte read(word address, bool bReadOnly = false);
+        void write(h_word address, byte data);
+        byte read(h_word address, bool bReadOnly = false);
 
     private: // Devices interface
         CPU cpu;
